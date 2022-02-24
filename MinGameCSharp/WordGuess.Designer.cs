@@ -175,6 +175,7 @@ namespace MinGameCSharp
             // userInpBox1
             // 
             this.userInpBox1.Location = new System.Drawing.Point(332, 33);
+            this.userInpBox1.MaxLength = 1;
             this.userInpBox1.Name = "userInpBox1";
             this.userInpBox1.Size = new System.Drawing.Size(125, 27);
             this.userInpBox1.TabIndex = 16;
@@ -187,6 +188,7 @@ namespace MinGameCSharp
             this.enterButton.TabIndex = 17;
             this.enterButton.Text = "Enter";
             this.enterButton.UseVisualStyleBackColor = true;
+            this.enterButton.Click += new System.EventHandler(this.enterButton_Click);
             // 
             // infoBox
             // 
