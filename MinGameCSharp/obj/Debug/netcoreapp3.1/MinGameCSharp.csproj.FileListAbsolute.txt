@@ -13,4 +13,4 @@ C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\
 C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.dll
 C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.pdb
 C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.genruntimeconfig.cache
-C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.WordHang.resources
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.WordGuess.resources
