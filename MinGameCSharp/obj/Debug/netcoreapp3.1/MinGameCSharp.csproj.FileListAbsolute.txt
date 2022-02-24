@@ -1,0 +1,16 @@
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\bin\Debug\netcoreapp3.1\MinGameCSharp.exe
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\bin\Debug\netcoreapp3.1\MinGameCSharp.deps.json
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\bin\Debug\netcoreapp3.1\MinGameCSharp.runtimeconfig.json
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\bin\Debug\netcoreapp3.1\MinGameCSharp.runtimeconfig.dev.json
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\bin\Debug\netcoreapp3.1\MinGameCSharp.dll
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\bin\Debug\netcoreapp3.1\MinGameCSharp.pdb
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.csprojAssemblyReference.cache
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.MenuForm.resources
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.csproj.GenerateResource.cache
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.AssemblyInfoInputs.cache
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.AssemblyInfo.cs
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.csproj.CoreCompileInputs.cache
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.dll
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.pdb
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.genruntimeconfig.cache
+C:\Users\aliss\source\repos\MinGameCSharp\MinGameCSharp\obj\Debug\netcoreapp3.1\MinGameCSharp.WordHang.resources
