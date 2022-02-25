@@ -49,6 +49,7 @@ namespace MinGameCSharp
             this.infoBox = new System.Windows.Forms.TextBox();
             this.pointsLabel = new System.Windows.Forms.Label();
             this.pointTrack = new System.Windows.Forms.Label();
+            this.AgainButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LetterBox1
@@ -221,11 +222,23 @@ namespace MinGameCSharp
             this.pointTrack.Text = "0";
             this.pointTrack.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // AgainButton
+            // 
+            this.AgainButton.Enabled = false;
+            this.AgainButton.Location = new System.Drawing.Point(332, 322);
+            this.AgainButton.Name = "AgainButton";
+            this.AgainButton.Size = new System.Drawing.Size(225, 74);
+            this.AgainButton.TabIndex = 21;
+            this.AgainButton.Text = "Play Again?";
+            this.AgainButton.UseVisualStyleBackColor = true;
+            this.AgainButton.Click += new System.EventHandler(this.AgainButton_Click);
+            // 
             // WordGuess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.AgainButton);
             this.Controls.Add(this.pointTrack);
             this.Controls.Add(this.pointsLabel);
             this.Controls.Add(this.infoBox);
@@ -276,5 +289,6 @@ namespace MinGameCSharp
         private System.Windows.Forms.TextBox infoBox;
         private System.Windows.Forms.Label pointsLabel;
         private System.Windows.Forms.Label pointTrack;
+        private System.Windows.Forms.Button AgainButton;
     }
 }

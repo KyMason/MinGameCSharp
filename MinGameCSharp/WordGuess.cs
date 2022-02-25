@@ -12,7 +12,7 @@ namespace MinGameCSharp
     {
         char userLetter;
 
-        string[] wordsArray= { "catmmmmmm","redmmmmmm","badmmmmmmmmm" };
+        string[] wordsArray = { "abcdefghi" };
         string choseWord;
 
         bool correclet1 = false;
@@ -26,6 +26,7 @@ namespace MinGameCSharp
         bool correclet9 = false;
 
         int incoCount = 0;
+        int winCount = 0;
 
         public WordGuess()
         {
@@ -35,17 +36,15 @@ namespace MinGameCSharp
 
         public void RandomStart()
         {
+            AgainButton.Enabled = false;
+
             System.Random random = new System.Random();
-            int i = random.Next(3);
+            int i = random.Next(1);
             choseWord = wordsArray[i];
 
+           
         }
 
-        private void test(char choseletter1)
-        {
-
-        }
- 
         private void WordHang_Load(object sender, EventArgs e)
         {
         }
@@ -100,8 +99,6 @@ namespace MinGameCSharp
                     break;
             }
             
-
-
             pointsLabel.Text = userLetter.ToString();
 
             if (userLetter == choseletter1 && correclet1 == false)
@@ -122,17 +119,33 @@ namespace MinGameCSharp
             else if (userLetter == choseletter4 && correclet4 == false)
             {
                 correclet4 = true;
+                letterBox4.Text = choseletter4.ToString();
             }
             else if (userLetter == choseletter5 && correclet5 == false)
+            {
                 correclet5 = true;
+                letterBox5.Text = choseletter5.ToString();
+            }
             else if (userLetter == choseletter6 && correclet6 == false)
+            {
                 correclet6 = true;
+                letterBox6.Text = choseletter6.ToString();
+            }
             else if (userLetter == choseletter7 && correclet7 == false)
+            {
                 correclet7 = true;
+                letterBox7.Text = choseletter7.ToString();
+            }
             else if (userLetter == choseletter8 && correclet8 == false)
+            {
                 correclet8 = true;
+                letterBox8.Text = choseletter8.ToString();
+            }
             else if (userLetter == choseletter9 && correclet9 == false)
+            {
                 correclet9 = true;
+                letterBox9.Text = choseletter9.ToString();
+            }
             else
                 incoCount++;
 
@@ -165,13 +178,28 @@ namespace MinGameCSharp
         }
         public void LostState()
         {
-
+            AgainButton.Enabled = true;
         }
        public void WonState()
         {
+            AgainButton.Enabled = true;
+            winCount++;
+            pointTrack.Text = winCount.ToString();
+            correclet1 = false;
+            correclet2 = false;
+            correclet3 = false;
+            correclet4 = false;
+            correclet5 = false;
+            correclet6 = false;
+            correclet7 = false;
+            correclet8 = false;
+            correclet9 = false;
 
         }
 
-
+        private void AgainButton_Click(object sender, EventArgs e)
+        {
+            RandomStart();
+        }
     }
 }
