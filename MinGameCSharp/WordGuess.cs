@@ -12,7 +12,8 @@ namespace MinGameCSharp
     {
         char userLetter;
 
-        string[] wordsArray = { "abcdefghi" };
+        string[] wordsArray = { "fishy","funky","lemonade","whisker","southern","spider","dormant","shelf","blanket","video",
+            "guinea","ruins","survey","parents","himself","bingo","saber","bench","paying","moustache"};
         string choseWord;
 
         bool correclet1 = false;
@@ -36,13 +37,55 @@ namespace MinGameCSharp
 
         public void RandomStart()
         {
+            LetterBox1.Text = "";
+            LetterBox2.Text = "";
+            letterBox3.Text = "";
+            letterBox4.Text = "";
+            letterBox5.Text = "";
+            letterBox6.Text = "";
+            letterBox7.Text = "";
+            letterBox8.Text = "";
+            letterBox9.Text = "";
+            wrongBox1.Text = "";
+            wrongBox2.Text = "";
+            wrongBox3.Text = "";
+            wrongBox4.Text = "";
+            wrongBox5.Text = "";
+            incoCount = 0;
+
+            letterBox6.Visible = true;
+            letterBox7.Visible = true;
+            letterBox8.Visible = true;
+            letterBox9.Visible = true;
+
+            enterButton.Enabled = true;
+            userInpBox1.Enabled = true;
             AgainButton.Enabled = false;
 
             System.Random random = new System.Random();
-            int i = random.Next(1);
+            int i = random.Next(21);
             choseWord = wordsArray[i];
 
-           
+            if (choseWord.Length == 5)
+            {
+                letterBox6.Visible = false;
+                letterBox7.Visible = false;
+                letterBox8.Visible = false;
+                letterBox9.Visible = false;
+            }
+            else if (choseWord.Length == 6)
+            {
+                letterBox7.Visible = false;
+                letterBox8.Visible = false;
+                letterBox9.Visible = false;
+            }
+            else if (choseWord.Length == 7)
+            {
+                letterBox8.Visible = false;
+                letterBox9.Visible = false;
+            }
+            else if (choseWord.Length == 8)
+                letterBox9.Visible = false;
         }
 
         private void WordHang_Load(object sender, EventArgs e)
@@ -51,8 +94,6 @@ namespace MinGameCSharp
 
         private void enterButton_Click(object sender, EventArgs e)
         {
-           
-
             if (char.IsLetter(userInpBox1.Text, 0))
             {
                 userLetter = userInpBox1.Text[0];
@@ -62,7 +103,6 @@ namespace MinGameCSharp
                 infoBox.Text = "Please enter a letter.";
 
             MatchCheck(userLetter);
-
         }
         
         public void MatchCheck(char userLetter)
@@ -98,8 +138,6 @@ namespace MinGameCSharp
                     choseletter9 = choseWord[8];
                     break;
             }
-            
-            pointsLabel.Text = userLetter.ToString();
 
             if (userLetter == choseletter1 && correclet1 == false)
             {
@@ -147,10 +185,23 @@ namespace MinGameCSharp
                 letterBox9.Text = choseletter9.ToString();
             }
             else
+            {
                 incoCount++;
-
-            if (incoCount > 5)
+                infoBox.Text = "That is incorrect. Try again.";
+            }
+            if (incoCount == 1)
+                wrongBox1.Text = userLetter.ToString();
+            else if (incoCount == 2)
+                wrongBox2.Text = userLetter.ToString();
+            else if (incoCount == 3)
+                wrongBox3.Text = userLetter.ToString();
+            else if (incoCount == 4)
+                wrongBox4.Text = userLetter.ToString();
+            else if (incoCount == 5)
+                wrongBox5.Text = userLetter.ToString();
+            else if (incoCount == 6)
                 LostState();
+  
             switch (choseWord.Length)
             {
                 case 6:
@@ -178,13 +229,10 @@ namespace MinGameCSharp
         }
         public void LostState()
         {
+            userInpBox1.Enabled = false;
+            enterButton.Enabled = false;
             AgainButton.Enabled = true;
-        }
-       public void WonState()
-        {
-            AgainButton.Enabled = true;
-            winCount++;
-            pointTrack.Text = winCount.ToString();
+
             correclet1 = false;
             correclet2 = false;
             correclet3 = false;
@@ -195,11 +243,34 @@ namespace MinGameCSharp
             correclet8 = false;
             correclet9 = false;
 
+            infoBox.Text = "You lost";
+        }
+       public void WonState()
+        {
+            enterButton.Enabled = false;
+            userInpBox1.Enabled = false;
+            AgainButton.Enabled = true;
+
+            winCount++;
+            pointTrack.Text = winCount.ToString();
+
+            correclet1 = false;
+            correclet2 = false;
+            correclet3 = false;
+            correclet4 = false;
+            correclet5 = false;
+            correclet6 = false;
+            correclet7 = false;
+            correclet8 = false;
+            correclet9 = false;
+
+            infoBox.Text = "You Win!";
         }
 
         private void AgainButton_Click(object sender, EventArgs e)
         {
             RandomStart();
         }
+
     }
 }
