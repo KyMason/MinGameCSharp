@@ -86,6 +86,7 @@ namespace MinGameCSharp
             }
             else if (choseWord.Length == 8)
                 letterBox9.Visible = false;
+
         }
 
         private void WordHang_Load(object sender, EventArgs e)
