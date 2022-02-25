@@ -49,7 +49,11 @@ namespace MinGameCSharp
             this.inNumBox7 = new System.Windows.Forms.TextBox();
             this.inNumBox8 = new System.Windows.Forms.TextBox();
             this.infoBox = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.againButton = new System.Windows.Forms.Button();
+            this.ineqBox9 = new System.Windows.Forms.TextBox();
+            this.inNumBox9 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pointDisplay = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // userInpBox
@@ -216,22 +220,65 @@ namespace MinGameCSharp
             this.infoBox.TabIndex = 19;
             this.infoBox.Text = "";
             // 
-            // button2
+            // againButton
             // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(274, 396);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 42);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Play again";
-            this.button2.UseVisualStyleBackColor = true;
+            this.againButton.Enabled = false;
+            this.againButton.Location = new System.Drawing.Point(274, 396);
+            this.againButton.Name = "againButton";
+            this.againButton.Size = new System.Drawing.Size(137, 42);
+            this.againButton.TabIndex = 20;
+            this.againButton.Text = "Play again";
+            this.againButton.UseVisualStyleBackColor = true;
+            this.againButton.Click += new System.EventHandler(this.againButton_Click);
+            // 
+            // ineqBox9
+            // 
+            this.ineqBox9.Location = new System.Drawing.Point(13, 396);
+            this.ineqBox9.Name = "ineqBox9";
+            this.ineqBox9.ReadOnly = true;
+            this.ineqBox9.Size = new System.Drawing.Size(27, 27);
+            this.ineqBox9.TabIndex = 21;
+            // 
+            // inNumBox9
+            // 
+            this.inNumBox9.Location = new System.Drawing.Point(70, 396);
+            this.inNumBox9.Name = "inNumBox9";
+            this.inNumBox9.ReadOnly = true;
+            this.inNumBox9.Size = new System.Drawing.Size(100, 27);
+            this.inNumBox9.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(497, 364);
+            this.label2.MinimumSize = new System.Drawing.Size(100, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 20);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Points";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pointDisplay
+            // 
+            this.pointDisplay.AutoSize = true;
+            this.pointDisplay.Location = new System.Drawing.Point(497, 396);
+            this.pointDisplay.MinimumSize = new System.Drawing.Size(100, 0);
+            this.pointDisplay.Name = "pointDisplay";
+            this.pointDisplay.Size = new System.Drawing.Size(100, 20);
+            this.pointDisplay.TabIndex = 24;
+            this.pointDisplay.Text = "0";
+            this.pointDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // NumberGuess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.pointDisplay);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.inNumBox9);
+            this.Controls.Add(this.ineqBox9);
+            this.Controls.Add(this.againButton);
             this.Controls.Add(this.infoBox);
             this.Controls.Add(this.inNumBox8);
             this.Controls.Add(this.inNumBox7);
@@ -281,6 +328,10 @@ namespace MinGameCSharp
         private System.Windows.Forms.TextBox inNumBox7;
         private System.Windows.Forms.TextBox inNumBox8;
         private System.Windows.Forms.RichTextBox infoBox;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button againButton;
+        private System.Windows.Forms.TextBox ineqBox9;
+        private System.Windows.Forms.TextBox inNumBox9;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label pointDisplay;
     }
 }
