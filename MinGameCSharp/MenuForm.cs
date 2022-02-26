@@ -19,18 +19,20 @@ namespace MinGameCSharp
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             WordGuess WH = new WordGuess();
-
             WH.Show();
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             NumberGuess NG = new NumberGuess();
-
             NG.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TicTac TT = new TicTac();
+            TT.Show();
         }
     }
 }

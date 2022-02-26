@@ -71,6 +71,7 @@ namespace MinGameCSharp
             this.button3.TabIndex = 2;
             this.button3.Text = "TicTac";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -78,7 +79,6 @@ namespace MinGameCSharp
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(111, 29);
             this.button4.TabIndex = 3;
-            this.button4.Text = "";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -87,7 +87,6 @@ namespace MinGameCSharp
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(111, 29);
             this.button5.TabIndex = 4;
-            this.button5.Text = "";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
@@ -96,7 +95,6 @@ namespace MinGameCSharp
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(111, 29);
             this.button6.TabIndex = 5;
-            this.button6.Text = "";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
@@ -105,7 +103,6 @@ namespace MinGameCSharp
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(111, 29);
             this.button7.TabIndex = 6;
-            this.button7.Text = "";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button8
@@ -114,7 +111,6 @@ namespace MinGameCSharp
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(111, 29);
             this.button8.TabIndex = 7;
-            this.button8.Text = "";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button9
@@ -123,7 +119,6 @@ namespace MinGameCSharp
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(111, 29);
             this.button9.TabIndex = 8;
-            this.button9.Text = "";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // button10
@@ -132,7 +127,6 @@ namespace MinGameCSharp
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(111, 29);
             this.button10.TabIndex = 9;
-            this.button10.Text = "";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // button11
@@ -141,7 +135,6 @@ namespace MinGameCSharp
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(111, 29);
             this.button11.TabIndex = 10;
-            this.button11.Text = "";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // button12
@@ -150,7 +143,6 @@ namespace MinGameCSharp
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(111, 29);
             this.button12.TabIndex = 11;
-            this.button12.Text = "";
             this.button12.UseVisualStyleBackColor = true;
             // 
             // MenuForm
