@@ -47,6 +47,7 @@ namespace MinGameCSharp
             this.DrawPointTrac = new System.Windows.Forms.Label();
             this.MePointTrac = new System.Windows.Forms.Label();
             this.infoBox = new System.Windows.Forms.TextBox();
+            this.againButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button11
@@ -57,6 +58,7 @@ namespace MinGameCSharp
             this.button11.TabIndex = 0;
             this.button11.Text = "button1";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -66,6 +68,7 @@ namespace MinGameCSharp
             this.button12.TabIndex = 1;
             this.button12.Text = "button1";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -75,6 +78,7 @@ namespace MinGameCSharp
             this.button13.TabIndex = 2;
             this.button13.Text = "button1";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button21
             // 
@@ -84,6 +88,7 @@ namespace MinGameCSharp
             this.button21.TabIndex = 3;
             this.button21.Text = "button1";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button31
             // 
@@ -93,6 +98,7 @@ namespace MinGameCSharp
             this.button31.TabIndex = 4;
             this.button31.Text = "button1";
             this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // button22
             // 
@@ -102,6 +108,7 @@ namespace MinGameCSharp
             this.button22.TabIndex = 5;
             this.button22.Text = "button1";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button23
             // 
@@ -111,6 +118,7 @@ namespace MinGameCSharp
             this.button23.TabIndex = 6;
             this.button23.Text = "button1";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button32
             // 
@@ -120,6 +128,7 @@ namespace MinGameCSharp
             this.button32.TabIndex = 7;
             this.button32.Text = "button1";
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // button33
             // 
@@ -129,6 +138,7 @@ namespace MinGameCSharp
             this.button33.TabIndex = 8;
             this.button33.Text = "button1";
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // label1
             // 
@@ -215,11 +225,23 @@ namespace MinGameCSharp
             this.infoBox.Size = new System.Drawing.Size(180, 94);
             this.infoBox.TabIndex = 17;
             // 
+            // againButton
+            // 
+            this.againButton.Enabled = false;
+            this.againButton.Location = new System.Drawing.Point(580, 367);
+            this.againButton.Name = "againButton";
+            this.againButton.Size = new System.Drawing.Size(194, 48);
+            this.againButton.TabIndex = 18;
+            this.againButton.Text = "Play again";
+            this.againButton.UseVisualStyleBackColor = true;
+            this.againButton.Click += new System.EventHandler(this.againButton_Click);
+            // 
             // TicTac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.againButton);
             this.Controls.Add(this.infoBox);
             this.Controls.Add(this.MePointTrac);
             this.Controls.Add(this.DrawPointTrac);
@@ -265,5 +287,6 @@ namespace MinGameCSharp
         private System.Windows.Forms.Label DrawPointTrac;
         private System.Windows.Forms.Label MePointTrac;
         private System.Windows.Forms.TextBox infoBox;
+        private System.Windows.Forms.Button againButton;
     }
 }
