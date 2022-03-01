@@ -52,12 +52,13 @@ namespace MinGameCSharp
             // 
             // button11
             // 
+            this.button11.BackColor = System.Drawing.SystemColors.Control;
             this.button11.Location = new System.Drawing.Point(131, 77);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(94, 94);
             this.button11.TabIndex = 0;
             this.button11.Text = "button1";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
@@ -146,9 +147,9 @@ namespace MinGameCSharp
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(204, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 46);
+            this.label1.Size = new System.Drawing.Size(357, 46);
             this.label1.TabIndex = 9;
-            this.label1.Text = "You are X, I am O.";
+            this.label1.Text = "You are Red, I am Blue.";
             // 
             // label2
             // 
@@ -222,6 +223,7 @@ namespace MinGameCSharp
             this.infoBox.Location = new System.Drawing.Point(608, 77);
             this.infoBox.Multiline = true;
             this.infoBox.Name = "infoBox";
+            this.infoBox.ReadOnly = true;
             this.infoBox.Size = new System.Drawing.Size(180, 94);
             this.infoBox.TabIndex = 17;
             // 

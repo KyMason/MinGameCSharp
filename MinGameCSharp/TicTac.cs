@@ -87,6 +87,29 @@ namespace MinGameCSharp
             button32.Enabled = false;
             button33.Enabled = false;
 
+            System.Random random = new System.Random();
+            int i = random.Next(9);
+
+            if (i == 0 && oneone < 2)
+                button11.BackColor = Color.Blue;
+            else if (i == 1 && onetwo < 2)
+                button12.BackColor = Color.Blue;
+            else if (i == 2 && onethree < 2)
+                button12.BackColor = Color.Blue;
+            else if (i == 3 && twoone < 2)
+                button12.BackColor = Color.Blue;
+            else if (i == 4 && twotwo < 2)
+                button12.BackColor = Color.Blue;
+            else if (i == 5 && twothree < 2)
+                button12.BackColor = Color.Blue;
+            else if (i == 6 && threeone < 2)
+                button12.BackColor = Color.Blue;
+            else if (i == 7 && threetwo < 2)
+                button12.BackColor = Color.Blue;
+            else if (i == 8 && threethree < 2)
+                button12.BackColor = Color.Blue;
+            else
+                computerTurn();
 
             userTurn();
         }
@@ -105,61 +128,70 @@ namespace MinGameCSharp
         private void button11_Click(object sender, EventArgs e)
         {
             oneone = 3;
+            button11.BackColor = Color.Red;
             computerTurn();
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
             onetwo = 3;
+            button12.BackColor = Color.Red;
             computerTurn();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
             onethree = 3;
+            button13.BackColor = Color.Red;
             computerTurn();
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
             twoone = 3;
+            button21.BackColor = Color.Red;
             computerTurn();
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
             twotwo = 3;
+            button22.BackColor = Color.Red;
             computerTurn();
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
             twothree = 3;
+            button23.BackColor = Color.Red;
             computerTurn();
         }
 
         private void button31_Click(object sender, EventArgs e)
         {
             threeone = 3;
+            button31.BackColor = Color.Red;
             computerTurn();
         }
 
         private void button32_Click(object sender, EventArgs e)
         {
             threetwo = 3;
+            button32.BackColor = Color.Red;
             computerTurn();
         }
 
         private void button33_Click(object sender, EventArgs e)
         {
             threethree = 3;
+            button33.BackColor = Color.Red;
             computerTurn();
         }
     }
 }
 
-/*user is x and computer is o.
- * every x is one point and every o is 10 points
+/*user is red and computer is blue.
+ * every red is one point and every blue is 10 points
  * if a full row, full column, or full diagonal = 3 then user win
  * if a full row, full column, or full diagonal = 30 then computer wins
  * if all buttons pushed and none of above happen then draw
