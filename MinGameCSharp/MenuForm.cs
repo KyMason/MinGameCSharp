@@ -34,5 +34,10 @@ namespace MinGameCSharp
             TicTac TT = new TicTac();
             TT.Show();
         }
+
+        private void MenuForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

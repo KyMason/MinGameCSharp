@@ -193,6 +193,7 @@ namespace MinGameCSharp
             // 
             // infoBox
             // 
+            this.infoBox.BackColor = System.Drawing.SystemColors.Control;
             this.infoBox.Location = new System.Drawing.Point(332, 78);
             this.infoBox.Multiline = true;
             this.infoBox.Name = "infoBox";
@@ -237,6 +238,7 @@ namespace MinGameCSharp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.AgainButton);
             this.Controls.Add(this.pointTrack);
